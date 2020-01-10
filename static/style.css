@@ -22,6 +22,7 @@
     border-radius: 15px;
     margin-top: 3%;    
     height: 700px;
+	text-align: center;
 }
 
 .frame{ 
@@ -77,4 +78,13 @@ p.stuff {
 ul.game{
 	font-size: 120%;
   	margin-left:100px;
+}
+
+h1, h2, h3, .cl1 {
+	text-align: center;	
+}
+
+.antibody {
+	width:200;
+	height:200px;	
 }
