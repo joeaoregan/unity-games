@@ -5,3 +5,7 @@
 
 # Ignore the google api key
 /node_modules/
+
+# Render yarn warning
+
+package-lock.json
