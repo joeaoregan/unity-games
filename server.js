@@ -37,5 +37,20 @@ io.on("connection", (socket) => {
 
 server.listen(port);
 console.clear(); // Clear console text
-console.log("Server running at http://localhost:" + port);
-console.log("Press Ctrl+C to stop the server");
+
+const green = "\x1b[32m";
+const blue = "\x1b[34m";
+const cyan = "\x1b[36m";
+const reset = "\x1b[0m";
+
+console.log(
+  `###################### Joe O'Regan's ######################
+${blue} _  _  __ _  __  ____  _  _    ___   __   _  _  ____  ____ 
+/ )( \\(  ( \\(  )(_  _)( \\/ )  / __) /  \\ ( \\/ )(  __)/ ___)
+) \\/ (/    / )(   ||   )  /  ( (_ \\/ /\\ \\/ \\/ \\ ) _) \\___ \\
+\\____/\\_)__)(__) (__) (__/    \\___/\\_/\\_/\\_)(_/(____)(____/${reset}
+###########################################################`
+);
+
+console.log("Server running at " + green + "http://localhost:" + port + reset);
+console.log("Press " + cyan + "Ctrl+C" + reset + " to stop the server");
